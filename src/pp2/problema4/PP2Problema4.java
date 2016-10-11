@@ -15,7 +15,7 @@ public class PP2Problema4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-          convertirFahrenheit();
+          muestraResultado(convertirFahrenheit());
     }
     public static double solicitarDatos(String d){ //Solicita datos
         double miDato;
@@ -25,8 +25,11 @@ public class PP2Problema4 {
         return miDato;
     }
     public static double convertirFahrenheit(){
-        double a = solicitarDatos("grados Celsius para convertir a Fahrenheit");
+        double a = solicitarDatos("grados Celsius para convertir a Fahrenheit" + "\n");
         return (a*9/5)+32;
+    }
+    public static void muestraResultado(double a){
+        System.out.print("El resultado es " + a);
     }
     
     
