@@ -24,9 +24,9 @@ public class PP2Problema4 {
         miDato= entradaEscaner.nextDouble();
         return miDato;
     }
-    public static double convertirFahrenheit(){
+    public static double convertirFahrenheit(){ //Metodo para convertir los grados
         double a = solicitarDatos("grados Celsius para convertir a Fahrenheit" + "\n");
-        return (a*9/5)+32;
+        return (a*9/5)+32; //La formula es grados celsius por 9/5 mas 32
     }
     public static void muestraResultado(double a){
         System.out.print("El resultado es " + a);
